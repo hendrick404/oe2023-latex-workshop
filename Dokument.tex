@@ -1,0 +1,73 @@
+\documentclass[a4]{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Wissenschaftliche Texte schreiben mit \LaTeX}
+\author{Hendrik Sauer}
+
+\begin{document}
+
+\maketitle
+
+We're no \emph{strangers} to \textbf{love}.
+You know the rules and so do I.
+
+\section{A full commitment's}\label{sec:first-verse}
+
+what I'm thinking of.
+
+\subsection{You wouldn't get this}
+
+from any other guy.
+
+\section*{I just wanna tell you}
+
+how I'm feeling.
+Gotta make you understand.
+
+Never gonna
+\begin{itemize}
+    \item Give you up
+    \item Let you down
+    \begin{itemize}
+        \item run around
+        \item and desert you
+    \end{itemize}
+\end{itemize}
+
+Never gonna
+\begin{enumerate}
+    \item Make you cry
+    \item say goodbye
+    \begin{enumerate}
+        \item Tell a lie
+        \item and hurt you
+    \end{enumerate}
+\end{enumerate}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{rick-astley.jpg}
+    \caption{Rick Astley}
+    \label{fig:rick-astley}
+\end{figure}
+
+\section{Quick Math}
+
+Seien \(x,y \in \mathbb{R}\). Es gilt
+\[ |x+y| \leq |x| + |y|. \]
+Sei \(z = (z_1, \dots, z_n) \in \mathbb{R}^n\)
+\begin{equation}
+    ||z||_p = \left(\sum_{i=1}^n z_i^p\right)^{\frac{1}{p}} \label{eq:p-norm}
+\end{equation}
+
+\section{Kreuzverweise}
+
+Wie in \autoref{sec:first-verse} zu lesen ist, in \autoref{fig:rick-astley} zu sehen und in \autoref{eq:p-norm} gezeigt, ist \LaTeX{} 1 nices Tool zur Texterstellung.
+
+\end{document}
